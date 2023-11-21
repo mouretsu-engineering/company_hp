@@ -6,12 +6,12 @@ export default function Contact() {
       as="section"
       width="100%"
       height="400px"
-      bg="gray.800"
+      bg="black"
       py="12%"
       textAlign="center"
         id="contact"
     >
-      <Text fontSize="3xl" fontWeight="bold" color="white">
+      <Text fontSize="30" fontWeight="bold" color="white">
         CONTACT
       </Text>
     </Box>

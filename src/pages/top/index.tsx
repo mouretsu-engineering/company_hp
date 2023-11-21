@@ -4,7 +4,7 @@ import AboutUs from '@/components/page/Top/AboutUs';
 import Contact from '@/components/page/Top/Contact';
 import Member from '@/components/page/Top/Member';
 import Footer from '@/components/base/Footer/Footer';
-import { Flex } from '@chakra-ui/react';
+import { ChakraProvider, Flex } from '@chakra-ui/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,14 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <div className={inter.className}>
-      <Header />
-      <Flex as="main" justify="center" align="center">
-        <AboutUs />
-      </Flex>
-      <Member />
-      <Member />
-      <Contact/>
-      <Footer />
+        <ChakraProvider>
+            <Header />
+            <Flex as="main" justify="center" align="center">
+                <AboutUs />
+            </Flex>
+            <Member />
+            <Member />
+            <Contact/>
+            <Footer />
+        </ChakraProvider>
     </div>
   )
 }

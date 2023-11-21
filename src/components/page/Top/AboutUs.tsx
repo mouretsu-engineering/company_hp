@@ -11,7 +11,7 @@ export default function AboutUs() {
       id="about-us"
       bg="white"
     >
-      <Text fontSize="xl" color="black" my={80} pl={200}>ABOUT US</Text>
+      <Text fontSize="xl" color="black" mt="120px" mb="70">ABOUT US</Text>
 
       <Flex direction="row" justifyContent="center">
         <Box mr={100}>
@@ -24,7 +24,7 @@ export default function AboutUs() {
           ))}
         </Box>
         <Box ml={8}>
-          <Text fontSize="20px" color="black" fontWeight="bold" lineHeight="2" my={100}>
+          <Text fontSize="20px" color="black" fontWeight="bold" lineHeight="2">
             こちらのセクションには、コンセプト、メッセージが入る予定です。<br />
             こちらのセクションには、コンセプト、メッセージが入る予定です。<br />
             こちらのセクションには、コンセプト、メッセージが入る予定です。<br />

@@ -4,23 +4,18 @@ export default function Member() {
     return (
       <Flex
         as="section"
-        minH="100vh" // 画面の縦幅全体を占めるように最小高さを設定
-        width="100vw" // 画面の横幅全体に広がるように設定
         direction={{ base: "column", md: "row" }} // レスポンシブ対応
-        justify="space-evenly" // コンテンツ間に均等なスペースを確保
         align="center" // 中央揃え
         id="member"
-        paddingX={{ base: "4", md: "8" }} // 横の内側の余白を設定
-        paddingY={{ base: "4", md: "8" }} // 縦の内側の余白を設定
-        bgColor="white" // 白い背景色を設定
       >
         <Box flex={1} maxWidth={{ base: "100%", md: "50%" }}> {/* フレキシブルな幅の設定 */}
             <Image
             src="/images/20200502_noimage.jpg"
             alt="メンバーの写真"
             objectFit="contain" // 画像をBox内に収める
-            width="100%" // 幅を100%に設定
+            width="70%" // 幅を100%に設定
             height="auto" // 高さを自動調整
+            ml={{ base: "50%", md: "10%" }} // レスポンシブ対応
             />
         </Box>
 

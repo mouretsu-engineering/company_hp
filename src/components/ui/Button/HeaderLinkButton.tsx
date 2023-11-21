@@ -14,7 +14,6 @@ export const HeaderLinkButton: React.FC<HeaderLinkButtonProps> = ({ label, href 
       fontSize="20"
       color="black"
       ml={10}
-      mt={20}
     >
       {label}
     </Text>
