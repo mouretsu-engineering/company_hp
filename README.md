@@ -8,25 +8,25 @@
 ## Git操作
 * 新しくブランチを作るとき
   ```bash
-  ./checkout.sh
+  sh ./checkout.sh
   ```
   * ブランチ作成する場合には、`タスクID`の入力をお願いします。
 
 * メインブランチの変更を取り込むとき
   ```bash
-  ./fetch_merge.sh
+  sh ./fetch_merge.sh
   ```
 
 * プッシュするとき
   ```bash
-  ./push.sh
+  sh ./push.sh
   ```
 
   * プッシュする前にかならず./fetch_merge.shを実行し、コンフリクトが起こっていないかチェックしてください
 
 * PRを送りたいとき
   ```bash
-  ./pr.sh
+  sh ./pr.sh
   ```
 
   * `./pr.sh`を実行後、「PRタイトルを入力」する際に、notionのタスク名の記述してください
