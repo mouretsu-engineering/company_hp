@@ -85,11 +85,14 @@ body {
   overflow-x: hidden;
   background-color: white;
   color: black;
+  /* 完了時に消す */
+  background: rgba(255, 255, 255, 0.5) url('/images/top.png') no-repeat !important;
+  background-size: cover !important;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-end-rgb)); 
+  background: rgb(var(--background-end-rgb));
 }
 
 a {

@@ -9,7 +9,6 @@ export default function AboutUs() {
       maxW="container.lg"
       width="100%"
       id="about-us"
-      bg="white"
     >
       <Text fontSize="xl" color="black" mt="120px" mb="70">ABOUT US</Text>
 
