@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google'
 import Header from '@/components/base/Header/Header';
-import AboutUs from '@/components/page/Top/AboutUs';
-import Contact from '@/components/page/Top/Contact';
-import Member from '@/components/page/Top/Member';
+import AboutUs from '@/components/page/Home/AboutUs';
+import Contact from '@/components/page/Home/Contact';
+import Member from '@/components/page/Home/Member';
 import Footer from '@/components/base/Footer/Footer';
 import { ChakraProvider, Flex } from '@chakra-ui/react';
 
