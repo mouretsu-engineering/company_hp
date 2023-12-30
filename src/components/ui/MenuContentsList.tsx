@@ -14,7 +14,7 @@ const menuItems = [
 
 export const MenuContentsList: React.FC = () => {
   return (
-    <List spacing={7} fontWeight='bold' >
+    <List color='white' spacing={7} fontWeight='bold' >
       {menuItems.map(({ label, component: Component }) => (
         <MenuContentsListItem label={label} key={label}>
           <Component />

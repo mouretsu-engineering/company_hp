@@ -5,7 +5,7 @@ import { CompanyLogo2 } from "./Logo/CompanyLogo2";
 export const SpMenu: React.FC = () => {
 
   return (
-    <VStack align='start' gap={20}>
+    <VStack align='start' h='100%' justifyContent="space-between">
       <MenuContentsList />
       <Box
         h='39.2vw'
