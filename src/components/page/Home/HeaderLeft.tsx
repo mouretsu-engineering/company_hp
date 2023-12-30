@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { CompanyLogo } from "@/components/ui/CompanyLogo";
+import { CompanyLogo1 } from "@/components/ui/Logo/CompanyLogo1";
 
 export const HeaderLeft = () => {
   return (
@@ -8,7 +8,7 @@ export const HeaderLeft = () => {
       position='relative'
       w={{ base: '56vw', md: '22.5vw' }}
     >
-      <CompanyLogo />
+      <CompanyLogo1 />
     </Box>
   );
 }

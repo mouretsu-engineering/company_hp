@@ -1,5 +1,6 @@
 import { IconButton } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
+import Router from 'next/router'
 
 export const ContactBtn: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ export const ContactBtn: React.FC = () => {
       icon={<EmailIcon boxSize="2.2vw" />}
       isRound={true}
       w='4.5vw'
+      onClick={() => Router.push('/contact')}
     />
     );
 };

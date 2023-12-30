@@ -1,11 +1,6 @@
 import { Box, VStack } from "@chakra-ui/react";
-import {
-  List,
-  ListItem,
-} from '@chakra-ui/react'
-import { BaseNextLink } from "@/components/ui/Link/BaseNextLink";
-import Image from 'next/image';
 import { MenuContentsList } from "./MenuContentsList";
+import { CompanyLogo2 } from "./Logo/CompanyLogo2";
 
 export const SpMenu: React.FC = () => {
 
@@ -17,12 +12,7 @@ export const SpMenu: React.FC = () => {
         position='relative'
         w='91.5vw'
       >
-        <Image
-          src="/images/company-logo-2.png"
-          alt="株式会社猛烈エンジニアリング"
-          layout="fill"
-          objectFit="cover"
-        />
+        <CompanyLogo2/>
       </Box>
     </VStack>
   );

@@ -41,3 +41,5 @@ export default function RootLayout({
     </div>
   )
 }
+
+// TODO pages/index.tsx　に移動させる　topディレクトリは削除する Header,Footer,Provider系は_app.tsxに記載する
