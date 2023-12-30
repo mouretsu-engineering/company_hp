@@ -9,14 +9,7 @@ export default function Member() {
         id="member"
       >
         <Box flex={1} maxWidth={{ base: "100%", md: "50%" }}> {/* フレキシブルな幅の設定 */}
-            <Image
-            src="/images/20200502_noimage.jpg"
-            alt="メンバーの写真"
-            objectFit="contain" // 画像をBox内に収める
-            width="70%" // 幅を100%に設定
-            height="auto" // 高さを自動調整
-            ml={{ base: "50%", md: "10%" }} // レスポンシブ対応
-            />
+
         </Box>
 
         <Box flex={1} maxWidth={{ base: "100%", md: "50%" }}>
@@ -26,7 +19,6 @@ export default function Member() {
         <Text fontSize="md" mb="10" color="black">
           駆け出しのエンジニアで、日々猛烈に勉強中。
         </Text>
-        
         <Flex direction="row" alignItems="flex-start">
           <Text fontSize="sm" fontWeight="bold" color="black">
             経歴
