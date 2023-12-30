@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 
-export default function Contact() {
+export const Contact = () => {
   return (
     <Box
       as="section"

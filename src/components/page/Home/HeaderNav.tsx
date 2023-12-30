@@ -1,12 +1,29 @@
-import { Wrap } from '@chakra-ui/react';
-import { NavItem } from './NavItem';
+import { Wrap, WrapItem } from '@chakra-ui/react';
+import { CompanyInfoLink } from '@/components/ui/Link/CompanyInfoLink';
+import { ServiceLink } from '@/components/ui/Link/ServiceLink';
+import { MemberLink } from '@/components/ui/Link/MemberLink';
+
+const links = [
+  { component: CompanyInfoLink },
+  { component: ServiceLink },
+  { component: MemberLink },
+];
 
 export const HeaderNav: React.FC = () => {
   return (
-    <Wrap as='nav' spacing='2.2vw' fontSize='1.1vw' fontWeight='bold' color='black'>
-      <NavItem href='/home'>会社案内</NavItem>
-      <NavItem href='/home'>事業内容</NavItem>
-      <NavItem href='/home'>メンバー</NavItem>
+    <Wrap
+      as='nav'
+      color='black'
+      display={{ base: 'none', md: 'block' }}
+      fontSize='1.1vw'
+      fontWeight='bold'
+      spacing='2.2vw'
+    >
+      {links.map((link, index) => (
+        <WrapItem key={index}>
+          <link.component />
+        </WrapItem>
+      ))}
     </Wrap>
   );
 };

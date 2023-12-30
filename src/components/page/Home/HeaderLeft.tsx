@@ -1,9 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import { CompanyLogo } from "@/components/ui/CompanyLogo";
 
-export default function HeaderLeft() {
+export const HeaderLeft = () => {
   return (
-    <Box w="22.5vw" h='2vw' position='relative'>
+    <Box
+      h={{ base: '5.3vw', md: '2vw' }}
+      position='relative'
+      w={{ base: '56vw', md: '22.5vw' }}
+    >
       <CompanyLogo />
     </Box>
   );
