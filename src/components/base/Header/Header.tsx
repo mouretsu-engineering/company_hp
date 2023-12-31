@@ -1,27 +1,18 @@
+import { HeaderLeft } from "@/components/page/Home/HeaderLeft";
+import { HeaderRight } from "@/components/page/Home/HeaderRight";
 import { Box, Flex } from "@chakra-ui/react";
-import Image from 'next/image'
-import { HeaderLinkButton } from "../../ui/Button/HeaderLinkButton";
 
 export default function Header() {
   return (
-    <Box as="header" position="relative">
-      <Image 
-        src="/images/light-gray-concrete-wall.jpg"
-        alt="Header Background" 
-        width={1950} 
-        height={800} 
-      />
-
+    <Box as="header" position="sticky" top='0'>
       <Flex
-        position="absolute"
-        top={10}
-        right={100}
-        direction="row"
-        p={4}
+        alignItems='center'
+        h={{ base: '21.3vw', md: '10vw' }}
+        p={{ base: '6.4vw 4.3vw', md: '2.7vw' }}
+        justify="space-between"
       >
-        <HeaderLinkButton label="事業紹介" href="#about-us" />
-        <HeaderLinkButton label="メンバー紹介" href="#member" />
-        <HeaderLinkButton label="お問い合わせ" href="#contact" />
+        <HeaderLeft />
+        <HeaderRight />
       </Flex>
     </Box>
   );
