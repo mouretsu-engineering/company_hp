@@ -1,10 +1,10 @@
 import { Box } from "@chakra-ui/react";
-import { PrimaryImg } from "@/components/ui/PrimaryImg";
+import { LogoLayout } from "@/components/ui/Logo/LogoLayout";
 
 export const PaintImg = () => {
 
   const images = [
-    { src: '/images/red-paint-pc.png', display: { base: 'none', md: 'block' }, h: '24.5vw' },
+    { src: '/images/red-paint-pc.png', display: { base: 'none', md: 'block' }, h: '25vw' },
     { src: '/images/red-paint-sp.png', display: { base: 'block', md: 'none' }, h: '36.2vw' }
   ];
 
@@ -18,7 +18,7 @@ export const PaintImg = () => {
           position='relative'
           w='100%'
         >
-          <PrimaryImg src={image.src} alt="株式会社猛烈エンジニアリング" />
+          <LogoLayout src={image.src} />
         </Box>
       ))}
     </Box>

@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { PrimaryImg } from "@/components/ui/PrimaryImg";
+import { LogoLayout } from "@/components/ui/Logo/LogoLayout";
 
 export const CompanyOverviewFooter = () => {
   return (
@@ -10,7 +10,7 @@ export const CompanyOverviewFooter = () => {
       h='10.6vw'
       mt='8vw'
     >
-      <PrimaryImg src='/images/mouretsu-text.png' alt="株式会社猛烈エンジニアリング" />
+      <LogoLayout src='/images/mouretsu-text.png' />
     </Box>
   );
 }
