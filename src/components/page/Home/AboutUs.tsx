@@ -1,10 +1,12 @@
-import { VStack } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { CatchphraseSection } from "./CatchphraseSection";
+import { CompanySection } from "./CompanySection";
 
 export default function AboutUs() {
   return (
-    <VStack align='start' mt='4.5vw' >
+    <Box mt='4.5vw' >
       <CatchphraseSection />
-    </VStack>
+      <CompanySection />
+    </Box>
   );
 }
