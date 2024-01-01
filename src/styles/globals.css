@@ -85,16 +85,16 @@ body {
   background-color: white;
   color: black;
   /* 完了時に消す */
-  /* background: rgba(255, 255, 255, 0.5) url('/images/top-pc.png') no-repeat !important;
-  background-size: cover !important; */
+  background: rgba(255, 255, 255, 0.5) url('/images/top-pc.png') no-repeat !important;
+  background-size: cover !important;
 }
   /* 完了時に消す */
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
   body {
     background: rgba(255, 255, 255, 0.5) url('/images/top-sp.png') no-repeat !important;
     background-size: cover !important;
   }
-} */
+}
 
 body {
   color: rgb(var(--foreground-rgb));
