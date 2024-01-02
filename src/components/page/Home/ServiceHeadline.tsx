@@ -1,13 +1,11 @@
 import { PrimaryImg } from "@/components/ui/PrimaryImg";
-import { Box, HStack, VStack } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
+import { Headline } from "./Headline";
 
 export const ServiceHeadline = () => {
   return (
     <HStack gap={{ base: '0', md: '9vw' }} align='end' pl={{ base: '4.27vw', md: '11.1vw' }}>
-      <VStack align='start' fontWeight='bold' gap={{ base: '4.27vw', md: '2.5vw' }}>
-        <Box color='#E61515' fontSize={{ base: '3.7vw', md: '1.4vw' }} >/* SERVICE */</Box>
-        <Box fontSize={{ base: '8.53vw', md: '3.9vw' }}>サービス</Box>
-      </VStack>
+      <Headline label="SERVICE" labelColor="#E61515" title="サービス" />
       <Box
         display={{ base: 'none', md: 'block' }}
         position='relative'
