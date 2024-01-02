@@ -11,11 +11,11 @@ type MenuContentsListItemProps = {
 export const MenuContentsListItem: React.FC<MenuContentsListItemProps> = ({label, children}) => {
 
   return (
-      <ListItem>
-        <VStack align='start' fontSize='20px' gap={1}>
-          <Box as="span" fontSize='10px'>/* {label} */</Box>
-          {children}
-        </VStack>
-      </ListItem>
+    <ListItem>
+      <VStack align='start' fontSize='20px' gap={1}>
+        <Box as="span" fontSize='10px'>/* {label} */</Box>
+        {children}
+      </VStack>
+    </ListItem>
   );
 }
