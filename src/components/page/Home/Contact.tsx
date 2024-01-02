@@ -1,39 +1,16 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
+import { ContactNavigation } from "./ContactNavigation";
+import { ContactHeadline } from "./ContactHeadline";
 
 export const Contact = () => {
   return (
-    <Flex
-    as="section"
-    direction={{ base: "column", md: "row" }} // レスポンシブ対応
-    align="center" // 中央揃え
-    id="member"
-  >
-    <Box flex={1} maxWidth={{ base: "100%", md: "50%" }}> {/* フレキシブルな幅の設定 */}
-
-    </Box>
-
-    <Box flex={1} maxWidth={{ base: "100%", md: "50%" }}>
-    <Text fontSize="2xl" fontWeight="bold" mb="10" color="black">
-      杉本悠哉
-    </Text>
-    <Text fontSize="md" mb="10" color="black">
-      駆け出しのエンジニアで、日々猛烈に勉強中。
-    </Text>
-    <Flex direction="row" alignItems="flex-start">
-      <Text fontSize="sm" fontWeight="bold" color="black">
-        経歴
-      </Text>
-      <Box>
-        <Text fontSize="sm" color="black" ml={"8%"}>
-          甲南大学卒業<br /><br />
-          株式会社ベネフィット・ワン入社<br />
-          営業本部・特別法人チームとして、従業員1万名超えの企業を担当。<br /><br />
-          株式会社みんなシステムズ入社<br />
-          バックエンドエンジニアとして、PHP, Laravelを用いたシステム開発に従事。<br /><br />
-        </Text>
+    <Box px={{ base: '4.27vw', md: '5.56vw' }} my={{ base: '25.6vw', md: '13.9vw' }}>
+      <Box bgGradient="linear(to-r, #E61515, #9b0f0f)" h={{ base: '100vw', md: '37.2vw' }} borderRadius={{ base: '40px', md: '60px' }} px={{ base: '6.4vw', md: '5.56vw' }} py={{ base: '15vw', md: '7vw' }}>
+        <Flex direction={{ base: 'column', md: 'row' }} color='white' justifyContent='space-between' h='100%'>
+          <ContactHeadline />
+          <ContactNavigation />
+        </Flex>
       </Box>
-    </Flex>
-  </Box>
-</Flex>
+    </Box>
   );
 }

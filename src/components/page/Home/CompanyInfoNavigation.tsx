@@ -1,5 +1,5 @@
-import { Box, Button, HStack } from "@chakra-ui/react";
-import Router from 'next/router'
+import { WhiteBorderBtn } from "@/components/ui/Button/WhiteBorderBtn";
+import { Box, HStack } from "@chakra-ui/react";
 
 export const CompanyInfoNavigation = () => {
   return (
@@ -7,16 +7,7 @@ export const CompanyInfoNavigation = () => {
       <Box fontSize={{ base: '5.3vw', md: '1.7vw' }}>
         会社案内を見る
       </Box>
-      <Button
-        variant='outline'
-        colorScheme='white'
-        h={{ base: '21.3vw', md: '11vw' }}
-        w={{ base: '21.3vw', md: '11vw' }}
-        borderRadius='50%'
-        onClick={() => Router.push('/company')}
-      >
-        ▶
-      </Button>
+      <WhiteBorderBtn path='/company' />
     </HStack>
   );
 }
