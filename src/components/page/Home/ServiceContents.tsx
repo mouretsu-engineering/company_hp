@@ -28,7 +28,7 @@ const services = [
 export const ServiceContents = () => {
   return (
     <Box w='100%' px={{ base: '4.27vw', md: '11.1vw' }}>
-      <Divider />
+      <Divider borderColor='#C4C4C4' />
       {services.map(service => (
         <ServiceContent key={service.index} {...service} />
       ))}

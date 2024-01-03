@@ -21,10 +21,10 @@ export const ServiceContent: React.FC<ServiceContentProps> = ({index, title, tex
         my={{ base: '8.53vw', md: '1.67vw' }}
       >
         <ServiceContentOverview index={index} title={title} text={text} />
-        <Divider orientation='vertical' display={{ base: 'none', md: 'block' }} />
+        <Divider borderColor='#C4C4C4' orientation='vertical' display={{ base: 'none', md: 'block' }} />
         <ServiceContentImg src={src} alt={alt} />
       </Stack>
-      <Divider/>
+      <Divider borderColor='#C4C4C4' />
     </>
   );
 }
