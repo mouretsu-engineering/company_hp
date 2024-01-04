@@ -35,7 +35,7 @@ export const ScrollToTopBtn = () => {
     >
       {isVisible &&
       <HStack spacing='1vw'>
-        <Box fontWeight='bold' fontSize='1vw' textShadow='1px 1px 1.5px #222222'>page top</Box>
+        <Box fontWeight='bold' fontSize='1vw' >page top</Box>
         <Button
           onClick={scrollToTop}
           variant='outline'
@@ -44,12 +44,10 @@ export const ScrollToTopBtn = () => {
           h='3.5vw'
           w='3.5vw'
           fontSize='0.5vw'
-          boxShadow='1px 1px 2px #222222'
-          textShadow='0.5px 0.5px 0.5px #222222'
         >
           ▲
         </Button>
-      </HStack>
+        </HStack>
       }
     </Box>
   );
