@@ -1,5 +1,4 @@
 import { CompanyInfo } from "@/components/page/company/CompanyInfo";
-import { CompanyInfoItem } from "@/components/page/company/CompanyInfoItem";
 import { CompanyPageHeadLine } from "@/components/page/company/CompanyPageHeadLine";
 import { Message } from "@/components/page/company/Message";
 import { Mission } from "@/components/page/company/Mission";
@@ -7,7 +6,7 @@ import { OfficeImg } from "@/components/page/company/OfficeImg";
 import { PhilosophyImg } from "@/components/page/company/PhilosophyImg";
 import { PresidentName } from "@/components/page/company/PresidentName";
 import { Vision } from "@/components/page/company/Vision";
-import { Box, Divider, Flex, HStack, Heading, Stack, Text, VStack } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 
 export default function Company() {
 
