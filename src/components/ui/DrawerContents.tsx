@@ -1,4 +1,4 @@
-import { Box, Button, HStack, IconButton, VStack, useDisclosure } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import {
   Drawer,
   DrawerBody,
@@ -6,13 +6,8 @@ import {
   DrawerContent,
   DrawerCloseButton,
 } from '@chakra-ui/react'
-import {
-  List,
-  ListItem,
-} from '@chakra-ui/react'
-import { BaseNextLink } from "@/components/ui/Link/BaseNextLink";
-import Image from 'next/image';
 import { SpMenu } from "./SpMenu";
+import { CompanyLogo3 } from "./Logo/CompanyLogo3";
 
 type DrawerContentsProps = {
   isOpen: boolean;
@@ -31,12 +26,7 @@ export const DrawerContents: React.FC<DrawerContentsProps> = ({isOpen, onClose})
             position='relative'
             w='42px'
             >
-            <Image
-              src="/images/mouretsu-icon-white.png"
-              alt="株式会社猛烈エンジニアリング"
-              layout="fill"
-              objectFit="cover"
-            />
+              <CompanyLogo3 />
           </Box>
         </DrawerHeader>
         <DrawerBody bgColor='#222222' p='24px 16px'>

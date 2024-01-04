@@ -82,7 +82,7 @@
 html,
 body {
   max-width: 100vw;
-  background-color: white;
+  background-color: #EDEDED!important;
   color: black;
   /* 完了時に消す */
   /* background: rgba(255, 255, 255, 0.5) url('/images/top-pc.png') no-repeat !important;
@@ -116,7 +116,4 @@ a {
     background: rgb(var(--background-start-rgb));
   }
 
-  html {
-    color-scheme: dark;
-  }
 }
