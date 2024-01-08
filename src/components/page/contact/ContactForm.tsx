@@ -1,4 +1,4 @@
-import { VStack } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 import { useContactForm } from "@/hook/useContactForm";
 import { NameInput } from "./NameInput";
 import { CompanyInput } from "./CompanyInput";
@@ -26,23 +26,25 @@ export const ContactForm = () => {
   const onSubmit = (data: any) => console.log(data);
 
   return (
-    <VStack
-      as="form"
-      onSubmit={handleSubmit(onSubmit)}
-      align='start'
-      bgColor='white'
-      ml={{ base: '4.27vw', md: '11.1vw' }}
-      mb={{ base: '10vw', md: '15vw' }}
-      pl={{ base: '6.4vw', md: '13.89vw' }}
-      pr={{ base: '6.4vw', md: '25vw' }}
-      py={{ base: '17vw', md: '7.2vw' }}
-      spacing={{ base: '17vw', md: '3.89vw' }}
-      w={{ base: 'auto', md: '100%' }}
-    >
-      {inputComponents.map((InputComponent, index) => (
-        <InputComponent key={index} control={control} errors={errors} />
-      ))}
-      <SubmitBtn />
-    </VStack>
+    <Box ml={{ base: '4.27vw', md: '0' }} >
+      <VStack
+        as="form"
+        onSubmit={handleSubmit(onSubmit)}
+        align='start'
+        bgColor='white'
+        ml={{ base: '0', md: '11.1vw' }}
+        mb={{ base: '10vw', md: '15vw' }}
+        pl={{ base: '6.4vw', md: '13.89vw' }}
+        pr={{ base: '6.4vw', md: '25vw' }}
+        py={{ base: '17vw', md: '7.2vw' }}
+        spacing={{ base: '15vw', md: '4vw' }}
+        w={{ base: 'auto', md: '100%' }}
+      >
+        {inputComponents.map((InputComponent, index) => (
+          <InputComponent key={index} control={control} errors={errors} />
+        ))}
+        <SubmitBtn />
+      </VStack>
+    </Box>
   );
 }

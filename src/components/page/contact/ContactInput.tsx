@@ -19,7 +19,6 @@ export const ContactInput: React.FC<ContactInputProps> = ({control, name, placeh
           {...field}
           variant='flushed'
           placeholder={placeholder}
-          p={{ base: '0 0 3vw 0', md: '0 0 1vw 0' }}
           focusBorderColor="transparent"
           _focus={{
             borderBottom: '1px solid #c9cacc74',
