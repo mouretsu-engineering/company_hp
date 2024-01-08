@@ -1,5 +1,5 @@
-import { HeaderLeft } from "@/components/page/Home/HeaderLeft";
-import { HeaderRight } from "@/components/page/Home/HeaderRight";
+import { HeaderLeft } from "@/components/base/Header/HeaderLeft";
+import { HeaderRight } from "@/components/base/Header/HeaderRight";
 import { Box, Flex } from "@chakra-ui/react";
 
 export default function Header() {
