@@ -1,5 +1,5 @@
-import { ContactForm } from "@/components/page/contact/ContactForm";
-import { ContactPageHeadline } from "@/components/page/contact/ContactPageHeadline";
+import { ContactForm } from "@/components/pages/Contact/ContactForm";
+import { ContactPageHeadline } from "@/components/pages/Contact/ContactPageHeadline";
 import { Box } from "@chakra-ui/react";
 
 export default function Contact() {

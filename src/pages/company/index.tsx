@@ -1,11 +1,11 @@
-import { CompanyInfo } from "@/components/page/company/CompanyInfo";
-import { CompanyPageHeadLine } from "@/components/page/company/CompanyPageHeadLine";
-import { Message } from "@/components/page/company/Message";
-import { Mission } from "@/components/page/company/Mission";
-import { OfficeImg } from "@/components/page/company/OfficeImg";
-import { PhilosophyImg } from "@/components/page/company/PhilosophyImg";
-import { PresidentName } from "@/components/page/company/PresidentName";
-import { Vision } from "@/components/page/company/Vision";
+import { CompanyInfo } from "@/components/pages/Company/CompanyInfo";
+import { CompanyPageHeadLine } from "@/components/pages/Company/CompanyPageHeadLine";
+import { Message } from "@/components/pages/Company/Message";
+import { Mission } from "@/components/pages/Company/Mission";
+import { OfficeImg } from "@/components/pages/Company/OfficeImg";
+import { PhilosophyImg } from "@/components/pages/Company/PhilosophyImg";
+import { PresidentName } from "@/components/pages/Company/PresidentName";
+import { Vision } from "@/components/pages/Company/Vision";
 import { VStack } from "@chakra-ui/react";
 
 export default function Company() {

@@ -1,6 +1,7 @@
 import { Stack } from "@chakra-ui/react";
-import { ContactInputAndErrorMsg } from "./ContactInputAndErrorMsg";
 import { InputField } from "./InputField";
+import { ContactInputAndErrorMsg } from "./ContactInputAndErrorMsg";
+
 
 type NameInputProps = {
   register: any;
