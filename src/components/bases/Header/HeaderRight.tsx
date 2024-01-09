@@ -1,7 +1,7 @@
 import { HStack } from "@chakra-ui/react";
 import { ContactBtn } from "@/components/ui/Button/ContactBtn";
-import { HeaderNav } from "@/components/page/Home/HeaderNav";
-import { MenuDrawer } from "../../ui/MenuDrawer";
+import { HeaderNav } from "@/components/bases/Header/HeaderNav";
+import { MenuDrawer } from "./MenuDrawer";
 
 export const HeaderRight = () => {
   return (

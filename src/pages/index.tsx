@@ -1,7 +1,7 @@
-import { AboutUs } from '@/components/page/Home/AboutUs';
-import { Contact } from '@/components/page/Home/Contact';
-import { Member } from '@/components/page/Home/Member';
-import { Service } from '@/components/page/Home/Service';
+import { AboutUs } from '@/components/pages/Home/AboutUs';
+import { Contact } from '@/components/pages/Home/Contact';
+import { Member } from '@/components/pages/Home/Member';
+import { Service } from '@/components/pages/Home/Service';
 
 export default function Home() {
   return (
