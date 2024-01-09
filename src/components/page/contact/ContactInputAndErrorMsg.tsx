@@ -1,20 +1,20 @@
-import { VStack } from "@chakra-ui/react";
+import { FormControl } from "@chakra-ui/react";
 import { ContactInput } from "./ContactInput";
 import { ErrorMsg } from "./ErrorMsg";
 
 type ContactInputAndErrorMsgProps = {
-  control: any;
+  register: any;
   name: string;
   placeholder: string;
-  error?: string;
+  errors: any;
 }
 
-export const ContactInputAndErrorMsg: React.FC<ContactInputAndErrorMsgProps> = ({control, name, placeholder, error}) => {
+export const ContactInputAndErrorMsg: React.FC<ContactInputAndErrorMsgProps> = ({register, name, placeholder, errors}) => {
 
   return (
-    <VStack align='start' w='100%'>
-      <ContactInput control={control} name={name} placeholder={placeholder} />
-      {error && <ErrorMsg error={error} />}
-    </VStack>
+    <FormControl isInvalid={errors[name]} w='100%'>
+      <ContactInput register={register} name={name} placeholder={placeholder} />
+      {errors[name] && <ErrorMsg error={errors[name].message} />}
+    </FormControl>
   );
 }

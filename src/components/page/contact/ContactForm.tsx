@@ -22,7 +22,7 @@ const inputComponents = [
 ];
 
 export const ContactForm = () => {
-  const { handleSubmit, control, errors } = useContactForm();
+  const { handleSubmit, register, errors } = useContactForm();
   const onSubmit = (data: any) => console.log(data);
 
   return (
@@ -40,7 +40,7 @@ export const ContactForm = () => {
         w={{ base: 'auto', md: '100%' }}
       >
         {inputComponents.map((InputComponent, index) => (
-          <InputComponent key={index} control={control} errors={errors} />
+          <InputComponent key={index} register={register} errors={errors} />
         ))}
         <SubmitBtn />
       </VStack>

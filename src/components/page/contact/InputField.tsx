@@ -7,7 +7,7 @@ type InputFieldProps = {
   children: React.ReactNode;
 }
 
-export const InputField: React.FC<InputFieldProps> = ({label, required, children}) => {
+export const InputField: React.FC<InputFieldProps> = ({label, required=false, children}) => {
 
   return (
     <VStack align='start' spacing={{ base: '5vw', md: '1.5vw' }} w='100%'>
