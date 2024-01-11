@@ -1,4 +1,3 @@
-// pages/api/sendMessage.ts
 import { WebClient } from "@slack/web-api";
 import type { NextApiRequest, NextApiResponse } from 'next'
 
@@ -8,22 +7,76 @@ const web = new WebClient(token);
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { data } = req.body;
-  const msgText = `
-  <!channel>
-  名前：${data.lastName} ${data.firstName}
-  会社名：${data.company}
-  部署：${data.department}
-  役職：${data.post}
-  メアド：${data.email}
-  電話番号：${data.tell}
-  お問い合わせ目的：${data.purpose}
-  お問い合わせ詳細：${data.detail}
-  `;
+  const msgBlocks = [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": `<!channel>`
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ` *氏名* ： ${data.lastName} ${data.firstName}`
+      },
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ` *会社名* ： ${data.company}`
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ` *部署* ： ${data.department}`
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ` *役職* ： ${data.post}`
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ` *メアド* ： ${data.email}`
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ` *電話番号* ： ${data.tell}`
+      },
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ` *お問い合わせ目的* ： ${data.purpose}`
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ` *お問い合わせ詳細* ：\n${data.detail}`
+      }
+    }
+  ];
 
   try {
     const response = await web.chat.postMessage({
       channel: channelName,
-      text: msgText,
+      blocks: msgBlocks,
     });
 
     res.status(200).json({ ts: response.ts });

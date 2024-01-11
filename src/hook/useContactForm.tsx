@@ -8,8 +8,8 @@ const schema = yup.object().shape({
   company: yup.string(),
   department: yup.string(),
   post: yup.string(),
-  email: yup.string().required('※この項目は入力必須項目です。').email(),
-  tell: yup.string().required('※この項目は入力必須項目です。'),
+  email: yup.string().required('※この項目は入力必須項目です。').email('有効なメールアドレスを入力してください。'),
+  tell: yup.string().required('※この項目は入力必須項目です。').matches(/^[0-9]+$/, '電話番号は数字のみでなければなりません。'),
   purpose: yup.string().required('※この項目は入力必須項目です。'),
   detail: yup.string().required('※この項目は入力必須項目です。'),
 });
