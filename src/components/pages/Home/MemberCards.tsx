@@ -4,14 +4,12 @@ import { MemberCard } from "./MemberCard";
 const members = [
   { index: '01', enLastName: 'FUJII', enFirstName: 'TATSUYA', name: '藤井 達也', description: 'テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります' },
   { index: '02', enLastName: 'YOKOO', enFirstName: 'ANNOSUKE', name: '横尾 杏之介', description: 'テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります' },
-  { index: '02', enLastName: 'YOKOO', enFirstName: 'ANNOSUKE', name: '横尾 杏之介', description: 'テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります' },
-  { index: '02', enLastName: 'YOKOO', enFirstName: 'ANNOSUKE', name: '横尾 杏之介', description: 'テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります' },
 ];
 
 export const MemberCards = () => {
   return (
     <Grid
-      gap={{ base: '17vw', md: '7vw' }}
+      gap={{ base: '15vw', md: '7vw' }}
       templateColumns={['repeat(1, 1fr)', 'repeat(3, 1fr)', 'repeat(3, 1fr)']}
       w='100%'
     >
