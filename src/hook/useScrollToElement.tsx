@@ -2,10 +2,9 @@ import { useRouter } from 'next/router'
 
 const useScrollToElement = () => {
   const router = useRouter()
-  const currentPath = router.asPath;
 
   const scrollToElement = async (elementId:string) => {
-    if (currentPath !== '/') {
+    if (router.asPath !== '/') {
       await router.push('/')
     }
     const element = document.getElementById(elementId);
