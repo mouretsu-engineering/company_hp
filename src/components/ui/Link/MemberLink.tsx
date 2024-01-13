@@ -1,7 +1,7 @@
-import { BaseNextLink } from "@/components/ui/Link/BaseNextLink";
+import { ScrollToElementLink } from "./ScrollToElementLink";
 
 export const MemberLink: React.FC = () => {
   return (
-    <BaseNextLink href='/member' >メンバー</BaseNextLink>
+    <ScrollToElementLink elementId='member' text="メンバー"/>
   );
 }
