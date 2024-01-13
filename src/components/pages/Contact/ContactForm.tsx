@@ -1,5 +1,4 @@
 import { Box, VStack } from "@chakra-ui/react";
-import { useContactForm } from "@/hook/useContactForm";
 import { NameInput } from "./NameInput";
 import { CompanyInput } from "./CompanyInput";
 import { DepartmentInput } from "./DepartmentInput";
@@ -9,6 +8,7 @@ import { TellInput } from "./TellInput";
 import { PurposeInput } from "./PurposeInput";
 import { DetailInput } from "./DetailInput";
 import { SubmitBtn } from "./SubmitBtn";
+import { useSubmitContactForm } from "@/hook/useSubmitContactForm";
 
 const inputComponents = [
   NameInput,
@@ -22,14 +22,13 @@ const inputComponents = [
 ];
 
 export const ContactForm = () => {
-  const { handleSubmit, register, errors, isSubmitting } = useContactForm();
-  const onSubmit = (data: any) => console.log(data);
+  const { handleSubmit, register, errors, isSubmitting } = useSubmitContactForm();
 
   return (
     <Box ml={{ base: '4.27vw', md: '11.1vw' }} >
       <VStack
         as="form"
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={handleSubmit}
         align='start'
         bgColor='white'
         mb={{ base: '10vw', md: '15vw' }}

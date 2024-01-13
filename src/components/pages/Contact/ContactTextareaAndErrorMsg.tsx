@@ -14,6 +14,7 @@ export const ContactTextareaAndErrorMsg: React.FC<ContactTextareaAndErrorMsgProp
     <FormControl isInvalid={errors[name]}  w='100%'>
       <Textarea
         {...register(name)}
+        rows={15}
         variant='flushed'
         placeholder={placeholder}
         p={{ base: '0 0 3vw 0', md: '0 0 1vw 0' }}
