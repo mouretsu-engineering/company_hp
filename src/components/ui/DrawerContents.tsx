@@ -30,7 +30,7 @@ export const DrawerContents: React.FC<DrawerContentsProps> = ({isOpen, onClose})
           </Box>
         </DrawerHeader>
         <DrawerBody bgColor='#222222' p='24px 16px'>
-          <SpMenu />
+          <SpMenu onClose={onClose} />
         </DrawerBody>
       </DrawerContent>
     </Drawer>

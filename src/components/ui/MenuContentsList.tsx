@@ -5,6 +5,10 @@ import { ServiceLink } from "./Link/ServiceLink";
 import { MemberLink } from "./Link/MemberLink";
 import { ContactLink } from "./Link/ContactLink";
 
+type MenuContentsListProps = {
+  onClose: () => void;
+}
+
 const menuItems = [
   { label: 'COMPANY', component: CompanyInfoLink },
   { label: 'SERVICE', component: ServiceLink },
@@ -12,12 +16,12 @@ const menuItems = [
   { label: 'CONTACT', component: ContactLink },
 ];
 
-export const MenuContentsList: React.FC = () => {
+export const MenuContentsList: React.FC<MenuContentsListProps> = ({onClose}) => {
   return (
-    <List color='white' spacing={7} fontWeight='bold' >
+    <List color='white' spacing={7} fontWeight='bold' onClick={onClose} >
       {menuItems.map(({ label, component: Component }) => (
         <MenuContentsListItem label={label} key={label}>
-          <Component />
+          <Component/>
         </MenuContentsListItem>
       ))}
     </List>
