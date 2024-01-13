@@ -9,7 +9,7 @@ type TellInputProps = {
 export const TellInput: React.FC<TellInputProps> = ({register, errors}) => {
   return (
     <InputField label='電話番号' required>
-      <ContactInputAndErrorMsg register={register} name='tell' placeholder='例) 000-0000-0000' errors={errors} />
+      <ContactInputAndErrorMsg register={register} name='tell' placeholder='ハイフン無し' errors={errors} />
     </InputField>
   );
 }
