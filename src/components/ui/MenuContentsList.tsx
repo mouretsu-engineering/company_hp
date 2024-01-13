@@ -18,9 +18,9 @@ const menuItems = [
 
 export const MenuContentsList: React.FC<MenuContentsListProps> = ({onClose}) => {
   return (
-    <List color='white' spacing={7} fontWeight='bold' onClick={onClose} >
+    <List color='white' spacing={7} fontWeight='bold' >
       {menuItems.map(({ label, component: Component }) => (
-        <MenuContentsListItem label={label} key={label}>
+        <MenuContentsListItem key={label} label={label} onClose={onClose}>
           <Component/>
         </MenuContentsListItem>
       ))}
