@@ -9,8 +9,8 @@ const members = [
 export const MemberCards = () => {
   return (
     <Grid
-      gap={{ base: '17vw', md: '8vw' }}
-      templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
+      gap={{ base: '15vw', md: '7vw' }}
+      templateColumns={['repeat(1, 1fr)', 'repeat(3, 1fr)', 'repeat(3, 1fr)']}
       w='100%'
     >
       {members.map(member => <MemberCard key={member.index} {...member} />)}
