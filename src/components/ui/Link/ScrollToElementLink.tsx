@@ -1,4 +1,4 @@
-import useScrollToElement from "@/hook/useScrollToElement";
+import useScrollToElement from "@/hooks/useScrollToElement";
 import { Box } from "@chakra-ui/react";
 
 type ScrollToElementLinkProps = {

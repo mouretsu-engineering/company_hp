@@ -1,4 +1,4 @@
-import { useContactForm } from "@/hook/useContactForm";
+import { useContactForm } from "@/hooks/useContactForm";
 import { useCustomToast } from "./useCustomToast";
 
 export const useSubmitContactForm = () => {

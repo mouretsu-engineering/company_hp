@@ -8,7 +8,7 @@ import { TellInput } from "./TellInput";
 import { PurposeInput } from "./PurposeInput";
 import { DetailInput } from "./DetailInput";
 import { SubmitBtn } from "./SubmitBtn";
-import { useSubmitContactForm } from "@/hook/useSubmitContactForm";
+import { useSubmitContactForm } from "@/hooks/useSubmitContactForm";
 
 const inputComponents = [
   NameInput,
