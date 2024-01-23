@@ -1,3 +1,4 @@
+import { Color } from "@/utils/Color";
 import { Box, Flex, VStack } from "@chakra-ui/react";
 
 type MemberCardProps = {
@@ -12,7 +13,7 @@ export const MemberCard: React.FC<MemberCardProps> = ({index, enLastName, enFirs
   return (
     <Box>
       <Flex h={{ base: '120vw', md: '30.6vw' }} justifyContent='space-between' fontWeight='bold'>
-        <Box color='#E61515' fontSize={{ base: '3.73vw', md: '1.39vw' }} >{index}</Box>
+        <Box color={Color.mouretsuRed} fontSize={{ base: '3.73vw', md: '1.39vw' }} >{index}</Box>
         <Box color='#5B5B5B' fontSize={{ base: '14.9vw', md: '3.9vw' }} style={{ writingMode: "vertical-rl" }} lineHeight={{ base: '15vw', md: '3.5vw' }}>
           <Box>{enLastName}</Box>
           <Box>{enFirstName}</Box>
