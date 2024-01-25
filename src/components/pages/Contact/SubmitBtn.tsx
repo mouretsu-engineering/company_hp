@@ -1,3 +1,4 @@
+import { Color } from "@/utils/Color";
 import { Button, Flex } from "@chakra-ui/react";
 
 type SubmitBtnProps = {
@@ -9,7 +10,7 @@ export const SubmitBtn: React.FC<SubmitBtnProps> = ({isSubmitting}) => {
     <Flex w='100%' justifyContent='center'>
       <Button
         borderRadius='30px'
-        bgColor='#E61515'
+        bgColor={Color.mouretsuRed}
         colorScheme='red'
         fontSize={{ base: '4.27vw', md: '1.25vw' }}
         w={{ base: '64vw', md: '19.4vw' }}

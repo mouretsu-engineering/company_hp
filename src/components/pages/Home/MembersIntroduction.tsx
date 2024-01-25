@@ -1,6 +1,7 @@
 import { VStack } from "@chakra-ui/react";
 import { Headline } from "./Headline";
 import { MemberCards } from "./MemberCards";
+import { Color } from "@/utils/Color";
 
 export const MembersIntroduction = () => {
   return (
@@ -14,7 +15,7 @@ export const MembersIntroduction = () => {
       spacing={{ base: '10vw', md: '5vw' }}
       id="member"
     >
-      <Headline label='MEMBER' labelColor='#E61515' title='メンバー紹介' titleColor='white' />
+      <Headline label='MEMBER' labelColor={Color.mouretsuRed} title='メンバー紹介' titleColor='white' />
       <MemberCards />
     </VStack>
   );
