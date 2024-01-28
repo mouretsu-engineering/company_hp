@@ -1,16 +1,31 @@
-import { Box, Flex } from "@chakra-ui/react";
-import { ContactNavigation } from "./ContactNavigation";
-import { ContactHeadline } from "./ContactHeadline";
+import { Stack, Text, VStack, useMediaQuery } from "@chakra-ui/react";
+import { Headline } from "./Headline";
+import { Color } from "@/utils/Color";
+import { NavigateCompanyContact } from "./NavigateCompanyContact";
+import { NavigateIndividualContact } from "./NavigateIndividualContact";
 
 export const Contact = () => {
+  const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
+  const sizeValue = isLargerThan900 ? '3.47vw' : '6vw';
+  const contactText = isLargerThan900 ? <ContactTextPc/> : <ContactTextSp/>;
+
   return (
-    <Box px={{ base: '4.27vw', md: '5.56vw' }} mb={{ base: '25.6vw', md: '10vw' }}>
-      <Box bgGradient="linear(to-r, #E61515, #9b0f0f)" h={{ base: '100vw', md: '37.2vw' }} borderRadius={{ base: '40px', md: '60px' }} px={{ base: '6.4vw', md: '5.56vw' }} py={{ base: '15vw', md: '7vw' }}>
-        <Flex direction={{ base: 'column', md: 'row' }} color='white' justifyContent='space-between' h='100%'>
-          <ContactHeadline />
-          <ContactNavigation />
-        </Flex>
-      </Box>
-    </Box>
+    <VStack spacing={{ base: '9vw', md: '5.56vw' }} mb={{ base: '20vw', md: '14vw' }} px={{ base: '4.27vw', md: '0' }}>
+      <VStack spacing={{ base: '4vw', md: '2vw' }}>
+        <Headline align="center" label='CONTACT' labelColor={Color.mouretsuRed} title='お問い合わせ' />
+        <Text fontSize={{ base: '3.73vw', md: '1.11vw' }} textAlign='center'>{contactText}</Text>
+      </VStack>
+      <Stack justify='center' direction={{ base: 'column', md: 'row' }} spacing={{ base: '6vw', md: '3.33vw' }} w='100%'>
+        <NavigateCompanyContact sizeValue={sizeValue} />
+        <NavigateIndividualContact sizeValue={sizeValue} />
+      </Stack>
+    </VStack>
   );
 }
+
+const ContactTextPc = () => (
+  <>各種サービスについてのご相談・ご質問、お見積もり依頼など、<br /> お気軽にお問い合わせください。</>
+);
+const ContactTextSp = () => (
+  <>各種サービスについてのご相談・ご質問、お見積もり依頼など、お気軽にお問い合わせください。</>
+);
